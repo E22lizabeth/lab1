@@ -7,12 +7,12 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "Russian");
 	double radius, angle;
-	cout << "Ðàäèóñ îêðóæíîñòè: "; 
+	cout << "Ð Ð°Ð´Ð¸ÑƒÑ Ð¾ÐºÑ€ÑƒÐ¶Ð½Ð¾ÑÑ‚Ð¸: "; 
 	cin >> radius;
-	cout << "Óãîë ñåêòîðà êðóãà: "; 
+	cout << "Ð£Ð³Ð¾Ð» ÑÐµÐºÑ‚Ð¾Ñ€Ð° ÐºÑ€ÑƒÐ³Ð°: "; 
 	cin >> angle;
-	cout << "\nÄëèíà îêðóæíîñòè: " << 2 * radius * M_PI;
-	cout << "\nÏëîùàäü êðóãà: " << radius * radius * M_PI;
-	cout << "\nÏëîùàäü êðóãîâîãî ñåêòîðà: " << radius * radius * M_PI * angle / 360;
+	cout << "\nÐ”Ð»Ð¸Ð½Ð° Ð¾ÐºÑ€ÑƒÐ¶Ð½Ð¾ÑÑ‚Ð¸: " << 2 * radius * M_PI;
+	cout << "\nÐŸÐ»Ð¾Ñ‰Ð°Ð´ÑŒ ÐºÑ€ÑƒÐ³Ð°: " << radius * radius * M_PI;
+	cout << "\nÐŸÐ»Ð¾Ñ‰Ð°Ð´ÑŒ ÐºÑ€ÑƒÐ³Ð¾Ð²Ð¾Ð³Ð¾ ÑÐµÐºÑ‚Ð¾Ñ€Ð°: " << radius * radius * M_PI * angle / 360;
 	return 0;
 }
