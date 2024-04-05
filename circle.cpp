@@ -11,8 +11,13 @@ int main() {
 	cin >> radius;
 	cout << "Угол сектора круга: "; 
 	cin >> angle;
+	if ((radius > 0) && ((0 <= angle) && (angle <= 360))) {
 	cout << "\nДлина окружности: " << 2 * radius * M_PI;
 	cout << "\nПлощадь круга: " << radius * radius * M_PI;
 	cout << "\nПлощадь кругового сектора: " << radius * radius * M_PI * angle / 360;
+}
+else {
+	cout << "\nОшибка";
+}
 	return 0;
 }
