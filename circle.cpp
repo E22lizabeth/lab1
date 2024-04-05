@@ -7,12 +7,17 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "Russian");
 	double radius, angle;
-	cout << "Радиус окружности: "; 
+	cout << "Радиус окружности: ";
 	cin >> radius;
-	cout << "Угол сектора круга: "; 
+	cout << "Угол сектора круга: ";
 	cin >> angle;
-	cout << "\nДлина окружности: " << 2 * radius * M_PI;
-	cout << "\nПлощадь круга: " << radius * radius * M_PI;
-	cout << "\nПлощадь кругового сектора: " << radius * radius * M_PI * angle / 360;
+	if ((radius > 0) && ((0 <= angle) && (angle <= 360))) {
+		cout << "\nДлина окружности: " << 2 * radius * M_PI;
+		cout << "\nПлощадь круга: " << radius * radius * M_PI;
+		cout << "\nПлощадь кругового сектора: " << radius * radius * M_PI * angle / 360;
+	}
+	else { //Проверка радиуса и угла
+		cout << "\nОшибка";
+	}
 	return 0;
 }
